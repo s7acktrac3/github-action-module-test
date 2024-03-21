@@ -1,22 +1,20 @@
-# module_example.py
+# module_test.py
 
-def greet_user(username):
-    """Greet the user by username."""
-    greeting = f"Hello, {username}! Welcome to the simulation."
-    print(greeting)
+def add_numbers(a, b):
+    result = a + b
+    print(f"Adding {a} + {b} = {result}")
+    return result
 
-def add_numbers(first_number, second_number):
-    """Add two numbers and print the result."""
-    result = first_number + second_number
-    print(f"The sum of {first_number} and {second_number} is {result}.")
+def multiply_numbers(a, b):
+    result = a * b
+    print(f"Multiplying {a} * {b} = {result}")
+    return result
 
-def print_message():
-    """Print a predefined message."""
-    message = "This is a test message from your script."
-    print(message)
+def print_message(message):
+    print(f"Message: {message}")
 
-if __name__ == "__main__":
-    # Example usage
-    greet_user("Alice")
-    add_numbers(5, 3)
-    print_message()
+def run_all():
+    # Calls other functions with predefined arguments
+    add_numbers(5, 3)  # Example call
+    multiply_numbers(4, 2)  # Example call
+    print_message("Hello from GitHub Actions")  # Example call
